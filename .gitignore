@@ -39,3 +39,9 @@
 
 # debug information files
 *.dwo
+
+# CMake - 删除build目录
+build/
+
+# IDE相关文件
+.vscode
