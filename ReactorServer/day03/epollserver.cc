@@ -1,16 +1,4 @@
 // epoll回声服务器
-#include <asm-generic/socket.h>
-#include <cerrno>
-#include <netinet/in.h>
-#include <stdio.h>
-#include <string.h>
-#include <strings.h>
-#include <sys/socket.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <arpa/inet.h>
-#include <netinet/tcp.h>
-#include <sys/epoll.h>
 #include "InetAddress.hpp"
 #include "Socket.hpp"
 #include "Epoll.hpp"
