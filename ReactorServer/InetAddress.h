@@ -1,5 +1,5 @@
-#ifndef INETADDRESS_HPP
-#define INETADDRESS_HPP
+#ifndef INETADDRESS_H
+#define INETADDRESS_H
 
 #include <cstdint>
 #include <cstring>
@@ -38,7 +38,7 @@ public:
 
     // TODO： 提供ip方法的线程安全版本
     const char*     ip()   const { return inet_ntoa(addr_.sin_addr); } 
-    const uint16_t  port() const { return ntohs(addr_.sin_port); }
+    uint16_t        port() const { return ntohs(addr_.sin_port); }
     const sockaddr* addr() const { return (sockaddr*)&addr_; }
     void setAddr(sockaddr_in addr) { addr_ = addr; }
 private:
